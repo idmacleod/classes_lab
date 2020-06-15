@@ -16,9 +16,10 @@ public class Printer {
     }
 
     public void print(int pages, int copies){
-        tot
-        if (pages * copies <= this.sheetsLeft) {
-            this.sheetsLeft -= pages * copies;
+        int totalSheets = pages * copies;
+        if (totalSheets <= this.sheetsLeft) {
+            this.sheetsLeft -= totalSheets;
+            this.toner -= totalSheets;
         }
     }
 }
