@@ -16,4 +16,16 @@ public class PrinterTest {
         assertEquals(100, printer.getSheetsLeft());
     }
 
+    @Test
+    public void printSuccess() {
+        printer.print(2, 3);
+        assertEquals(94, printer.getSheetsLeft());
+    }
+
+    @Test
+    public void printFail() {
+        printer.print(100, 2);
+        assertEquals(100, printer.getSheetsLeft());
+    }
+
 }
