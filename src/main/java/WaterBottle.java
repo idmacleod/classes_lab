@@ -1,5 +1,5 @@
 public class WaterBottle {
-    int volume;
+    private int volume;
 
     public WaterBottle(){
         this.volume = 100;
